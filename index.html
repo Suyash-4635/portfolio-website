@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fbe156579b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="header">Home</a>
+                    </li>
+                    <li>
+                        <a href="about">about</a>
+                    </li>
+                    <li>
+                        <a href="services">services</a>
+                    </li>
+                    <li>
+                        <a href="portfolio">portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact">contact</a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, i'm <span> kevin</span>  <br>  jenfrom Australia</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Created and maintained UI standards for 20+ websites, which included over 100 pages
+                        Worked cross-functionally with developers to implement new features and maintain site usability.Mentored more than 100 students online for UI/UX developer.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links "onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li> <span>UI/UX</span><br>Designing web/app interfaces</li>
+                                <li> <span>Web development</span><br>web app development</li>
+                                <li> <span>App development</span><br>Building android/ios apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li> <span>2021- current</span><br> UI/UX Design training at ET institute</li>
+                                <li> <span>2019-2021</span><br>Team lead at startup LLC</li>
+                                <li> <span>2017-2019</span><br>UI/UX design executive at coin digital</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li> <span>2016</span><br>UI/UX design training at ET institute</li>
+                                <li> <span>2016</span><br>MBA from mit bengalore</li>
+                                <li> <span>2014</span><br>BBa from ISM bengalore</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sevices">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                   
+                    <h2>web design</h2>
+                    <p> basic web designs of HTML CSS and js and backend work of reactjs.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX design</h2>
+                    <p> basic UI/UX designs of web development part of frontend domain.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-adn"></i>
+                    <h2>App design</h2>
+                    <p> basic app designs using flutter php and learning make boost.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+               <img src="images/work-1.png">
+               <div class="layer">
+                <h3>social media app</h3>
+                <p> The app connects you to the  connected people around the people ,
+                    download it from app store.
+                    
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+               </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music app</h3>
+                    <p> The app connects you to the  connected people around the people ,
+                        download it from app store.
+                        
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                   </div>
+                 </div>
+             </div>
+             <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online shopping  app</h3>
+                    <p> The app connects you to the  connected people around the people ,
+                        download it from app store.
+                        
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                   </div>
+                 </div>
+             </div>
+             <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me</h1>
+                    <p><i class="fa-brands fa-telegram"></i></i>contact@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>9685****789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">download CV</a>
+                    
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> copyright@suyash .made with <i class="fa-solid fa-heart"></i> frontend tools</p>
+        </div>
+    </div>
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks ){
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents ){
+                tabcontent.classlist.remove("active-tab");
+            }
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="--200px";
+        }
+        
+        </script>
+    
+</body>
+</html>
